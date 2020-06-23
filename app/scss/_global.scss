@@ -1,0 +1,42 @@
+@import "vars";
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: $text;
+    display: inline-block;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $text;
+}
+.container {
+    max-width: 1070px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
