@@ -17,8 +17,17 @@
         }
     }
 }
+.menu__btn {
+    width: 30px;
+    display: none;
+    div {
+        height: 3px;
+        width: 100%;
+        background-color: $blue;
+        margin-bottom: 5px;
+    }
+}
 .menu__list {
-    display: flex;
     &-tel {
         position: relative;
         padding-left: 23px;
@@ -34,6 +43,7 @@
     }
 
     li {
+        display: inline-block;
         & + li {
             margin-left: 30px;
         }
@@ -79,6 +89,7 @@
     margin-bottom: 40px;
 }
 .form {
+    
     input {
         display: inline-block;
         width: 200px;
@@ -169,12 +180,13 @@
 //! start services
 
 .services {
-    background-image: url(../images/services-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url(../images/20313.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-color: #f2f0f2;
     background-size: cover;
-    height: 700px;
-    padding-top: 40px;
+
+    padding: 70px 0 100px 0;
 }
 
 .services__inner {
@@ -235,12 +247,17 @@
 
 .price {
     padding: 100px 0;
+    background-image: url(../images/3290330.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 650px;
 }
 
 .price__inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 .price__item {
     background: #fff;
@@ -303,30 +320,20 @@
         content: "";
         background-image: url(../images/Arrow.png);
         position: absolute;
-        top: 29px;
-        right: -70px;
+        top: 122px;
+        right: -32%;
         width: 60px;
         height: 25px;
     }
 }
-.arrow-bottom {
-    &::after {
-        content: "";
-        background-image: url(../images/Arrow-bm.png);
-        position: absolute;
-        bottom: -25px;
-        right: 131px;
-        width: 24px;
-        height: 62px;
-    }
-}
+
 .arrow-left {
-    &::after {
+    &::before {
         content: "";
-        background-image: url(../images/Arrow-left.png);
+        background-image: url(../images/Arrow.png);
         position: absolute;
-        bottom: 84px;
-        right: -77px;
+        top: 122px;
+        right: 250px;
         width: 60px;
         height: 25px;
     }
@@ -386,7 +393,7 @@
 .contacts__link {
     background-color: $yellow;
     text-align: center;
-    max-width: 180px;
+    max-width: 200px;
     width: 100%;
     border-radius: 5px;
     padding: 12px 10px;
@@ -397,23 +404,82 @@
 }
 //! end contacts
 
-
-
 //! start footer
 
-.footer{
+.footer {
     background-color: $dark;
-    height: 80px;
+    min-height: 80px;
     color: #fff;
 }
-.footer__inner{
+.footer__inner {
     line-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer__tel{
+.footer__tel {
     color: #fff;
 }
 
 //! end footer
+
+// ! start table
+.price-list {
+    // background-color: #f0f0f0;
+    padding-bottom: 50px;
+    background-image: url(../images/605701-PN82V7-669.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+.price-list__inner {
+    padding-top: 40px;
+}
+table,
+td,
+tr {
+    // background-color: #fff;
+    border: 1px solid $text;
+    border-collapse: collapse;
+
+    padding: 10px 15px;
+    font-weight: 600;
+}
+td:nth-child(2) {
+    width: 90px;
+    text-align: center;
+}
+td:nth-child(3) {
+    width: 110px;
+    text-align: center;
+}
+table {
+    // max-width: 1000px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    color: $dark;
+}
+.price-list__table-title {
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+}
+.price-list__table-title--dark {
+    text-align: center;
+    background-color: rgb(161, 161, 161);
+    font-family: "Montserrat", sans-serif;
+
+    color: #000;
+    font-size: 16px;
+}
+
+.price-list__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: $dark;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+// ! end table
+
+@import "media";

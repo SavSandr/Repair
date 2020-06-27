@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 *,
 *::after,
@@ -33,6 +34,7 @@ body {
     // font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: $text;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1070px;

@@ -1,0 +1,161 @@
+
+@media (max-width:1000px){
+    .price__inner{
+        display: block;
+        
+    }
+    .price__item{
+        margin: 0 auto;
+        &+ .price__item{
+            margin-top: 30px;
+        }
+    }
+    .work__item{
+        max-width: 24%;
+    }
+}
+    
+
+@media (max-width:990px){
+    .contacts__line form{
+        // max-width: 220px;
+        margin: 0 auto;
+        display: block;
+    }
+    .form input+input{
+        margin-left: 0;
+    }
+    .form button{
+        margin-left: 0;
+    }
+    .form-tel{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+   
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+    .menu__list {
+        display: none;
+        position: absolute;
+        top: 79px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 3;
+        text-align: center;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        li{
+            width: 100%;
+        }
+        li + li {
+            margin-left: 0;
+            border-top: 1px solid #ccc;
+        }
+    }
+   
+    .menu__btn {
+        display: block;
+    }
+    .work__inner{
+        display: block;
+    }
+
+    .work__item,
+    .work__item:first-child{
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 55px;
+        max-width: 100%;
+    }
+    .arrow-right::after{
+        background-image: url(../images/Arrow-bm.png);
+        width: 24px;
+        height: 62px;
+        top: 105%;
+        right: 50%;
+    }
+    .arrow-left{
+        display: none;
+    }
+    .work__description{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width:660px){
+    .intro__title{
+        font-size: 54px;
+    }
+    .form{
+        max-width: 220px;
+        button{
+            margin-left: 0;
+        }
+    }
+    .form input+input {
+        margin-left: 0;
+    }
+    .form-tel{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .about__box{
+        display: block;
+    }
+    .about__item{
+        margin: 0 auto;
+        &+ .about__item{
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width:480px){
+    .intro__title,
+    .intro__subtitle{
+        text-align: center;
+        line-height: 54px;
+    }
+    .form{
+        margin: 0 auto;
+    }
+    .contacts__line{
+        display: block;
+        text-align: center;
+    }
+    .contacts__text{
+        margin: 0px auto 20px;
+    }
+    .footer__inner{
+        display: block;
+        line-height: 30px;
+        padding: 20px 0;
+    }
+    
+    
+}
+
+@media (max-width:380px){
+    .intro__title,
+    .intro__subtitle{
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 769px) {
+   
+    .menu__list{
+        display: block !important;
+    }
+}
+

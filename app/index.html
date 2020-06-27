@@ -18,18 +18,22 @@
         <div class="container">
             <div class="header__inner">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
                 <nav class="menu">
+                    <div class="menu__btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <ul class="menu__list">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Цены</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="tel:89133755391" class="menu__list-tel" >89133755391</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#price">Цены</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="tel:89133755391" class="menu__list-tel">89133755391</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,10 +42,11 @@
 
     <section class="intro">
         <div class="container">
-            <div class="intro__inner " >
-                <h1 class="intro__title wow animate__fadeInLeft" data-wow-duration="1s" >Ремонт квартир, коттэджей, офисов</h1>
-                <h2 class="intro__subtitle wow animate__fadeInLeft" data-wow-duration="1s">Под ключ</h2>
-                <div class="form wow animate__fadeInLeft" data-wow-duration="1s">
+            <div class="intro__inner ">
+                <h1 class="intro__title wow animate__fadeInLeft" data-wow-duration="1s">Ремонт квартир, коттэджей,
+                    офисов</h1>
+                <h2 class="intro__subtitle wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="-100">Под ключ</h2>
+                <div class="form wow animate__fadeInLeft" data-wow-duration="1s" data-wow-offset="-100">
                     <form>
                         <input class="form-name" type="text" placeholder="Ваше имя" required>
                         <input class="form-tel" type="text" placeholder="Ваш номер" required>
@@ -53,14 +58,14 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h3 class="title">Почему мы?</h3>
             <p class="about__text">Мы любим свою работу и выполняем ее ответственно, качественно и с душой, поэтому мы
                 уверены, что вы посоветуете нас свои друзьям.</p>
             <div class="about__box">
 
-                <div class="about__item wow animate__fadeInUp" >
+                <div class="about__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="about__item-img">
                         <svg id="Capa_1" enable-background="new 0 0 516.037 516.037" height="80"
                             viewBox="0 0 516.037 516.037" width="80" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +84,7 @@
                         профессионалами своего дела</div>
                 </div>
 
-                <div class="about__item wow animate__fadeInUp">
+                <div class="about__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="about__item-img">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
@@ -153,7 +158,7 @@
                         работ.</div>
                 </div>
 
-                <div class="about__item wow animate__fadeInUp" > 
+                <div class="about__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="about__item-img">
                         <svg viewBox="0 0 511 511.99978" xmlns="http://www.w3.org/2000/svg" height="80" width="80">
                             <g>
@@ -176,7 +181,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="title ">Наши услуги</div>
             <div class="services__inner">
@@ -274,27 +279,27 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <div class="title">Наши цены</div>
             <div class="price__inner">
 
-                <div class="price__item wow animate__fadeInUp">
+                <div class="price__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="price__item-title">Косметический ремонт</div>
                     <div class="price__item-text">от 1500руб. за м2</div>
-                    <div class="price__item-link">Подробнее</div>
+                    <a href="table.html" class="price__item-link">Подробнее</a>
                 </div>
 
-                <div class="price__item wow animate__fadeInUp">
+                <div class="price__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="price__item-title">Евроремонт</div>
                     <div class="price__item-text">от 4500руб. за м2</div>
-                    <div class="price__item-link">Подробнее</div>
+                    <a href="table.html" class="price__item-link">Подробнее</a>
                 </div>
 
-                <div class="price__item wow animate__fadeInUp">
+                <div class="price__item wow animate__fadeInUp" data-wow-offset="200">
                     <div class="price__item-title">Капитальный ремонт</div>
                     <div class="price__item-text">от 4000руб. за м2</div>
-                    <div class="price__item-link">Подробнее</div>
+                    <a href="table.html" class="price__item-link">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -331,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div class="work__item arrow-bottom">
+                    <div class="work__item arrow-right ">
                         <div class="work__title">
                             <div class="work__number">
                                 3<span>.</span>
@@ -344,7 +349,7 @@
                         </div>
                     </div>
 
-                    <div class="work__item arrow-left">
+                    <div class="work__item arrow-right arrow-left">
                         <div class="work__title">
                             <div class="work__number">
                                 4<span>.</span>
@@ -373,7 +378,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__line">
                 <p class="contacts__text">Оставьте свою заявку и мы свяжемся с вами.</p>
@@ -398,7 +403,7 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__text"><span>Юридические данные: </span> ИП Савватеев И.А</div>
-                <a href="tel:89133755391"  class="footer__tel"><span>Телефон: </span>89133755391</a>
+                <a href="tel:89133755391" class="footer__tel"><span>Телефон: </span>89133755391</a>
             </div>
         </div>
     </footer>
